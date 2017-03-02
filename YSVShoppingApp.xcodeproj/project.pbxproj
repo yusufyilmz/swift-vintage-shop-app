@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B152151074B66C13D073F2E /* Pods_YSVShoppingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84662605F60A46E080798A0 /* Pods_YSVShoppingApp.framework */; };
+		CD9896091E65FDBA00AA8753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896081E65FDBA00AA8753 /* AppDelegate.swift */; };
+		CD9896101E65FDBA00AA8753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD98960F1E65FDBA00AA8753 /* Assets.xcassets */; };
+		CD9896131E65FDBA00AA8753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9896111E65FDBA00AA8753 /* LaunchScreen.storyboard */; };
+		CD9896241E66004500AA8753 /* YSPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD98961F1E66004500AA8753 /* YSPopupViewController.xib */; };
+		CD9896251E66004600AA8753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9896201E66004500AA8753 /* LaunchScreen.storyboard */; };
+		CD9896261E66004600AA8753 /* YSSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9896211E66004500AA8753 /* YSSortViewController.xib */; };
+		CD9896271E66004600AA8753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9896221E66004500AA8753 /* Main.storyboard */; };
+		CD9896281E66004600AA8753 /* YSPopupViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9896231E66004500AA8753 /* YSPopupViewCell.xib */; };
+		CD98962E1E66006B00AA8753 /* YSSearchCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98962A1E66006B00AA8753 /* YSSearchCollectionViewLayout.swift */; };
+		CD98962F1E66006B00AA8753 /* YSCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98962B1E66006B00AA8753 /* YSCollectionViewLayout.swift */; };
+		CD9896301E66006B00AA8753 /* YSSearchCollectionViewLayout3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98962C1E66006B00AA8753 /* YSSearchCollectionViewLayout3.swift */; };
+		CD9896311E66006B00AA8753 /* YSSearchCollectionViewLayout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98962D1E66006B00AA8753 /* YSSearchCollectionViewLayout2.swift */; };
+		CD9896441E66007900AA8753 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896321E66007900AA8753 /* AlertDialog.swift */; };
+		CD9896451E66007900AA8753 /* YSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896331E66007900AA8753 /* YSButton.swift */; };
+		CD9896461E66007900AA8753 /* AppGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896341E66007900AA8753 /* AppGlobals.swift */; };
+		CD9896471E66007900AA8753 /* YSCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896351E66007900AA8753 /* YSCheckBox.swift */; };
+		CD9896481E66007900AA8753 /* String+Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896361E66007900AA8753 /* String+Numeric.swift */; };
+		CD9896491E66007900AA8753 /* PopupDialogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896371E66007900AA8753 /* PopupDialogManager.swift */; };
+		CD98964A1E66007900AA8753 /* YSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896381E66007900AA8753 /* YSHelpers.swift */; };
+		CD98964B1E66007900AA8753 /* YSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896391E66007900AA8753 /* YSUtils.swift */; };
+		CD98964C1E66007900AA8753 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963A1E66007900AA8753 /* SearchList.swift */; };
+		CD98964D1E66007900AA8753 /* FavouriteProductArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963B1E66007900AA8753 /* FavouriteProductArchiver.swift */; };
+		CD98964E1E66007900AA8753 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963C1E66007900AA8753 /* BrandModel.swift */; };
+		CD98964F1E66007900AA8753 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963D1E66007900AA8753 /* ApiModel.swift */; };
+		CD9896501E66007900AA8753 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963E1E66007900AA8753 /* CollectionModel.swift */; };
+		CD9896511E66007900AA8753 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98963F1E66007900AA8753 /* ProductModel.swift */; };
+		CD9896521E66007900AA8753 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896401E66007900AA8753 /* UserModel.swift */; };
+		CD9896531E66007900AA8753 /* MainCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896411E66007900AA8753 /* MainCollectionModel.swift */; };
+		CD9896541E66007900AA8753 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896421E66007900AA8753 /* StoreModel.swift */; };
+		CD9896551E66007900AA8753 /* MainHeadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896431E66007900AA8753 /* MainHeadModel.swift */; };
+		CD9896651E66008400AA8753 /* YSSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896561E66008400AA8753 /* YSSearchViewController.swift */; };
+		CD9896661E66008400AA8753 /* YSCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896571E66008400AA8753 /* YSCollectionsViewController.swift */; };
+		CD9896671E66008400AA8753 /* YSProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896581E66008400AA8753 /* YSProductDetailViewController.swift */; };
+		CD9896681E66008400AA8753 /* YSCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896591E66008400AA8753 /* YSCartViewController.swift */; };
+		CD9896691E66008400AA8753 /* YSBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965A1E66008400AA8753 /* YSBrandViewController.swift */; };
+		CD98966A1E66008400AA8753 /* YSImageSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965B1E66008400AA8753 /* YSImageSlideViewController.swift */; };
+		CD98966B1E66008400AA8753 /* YSProductListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965C1E66008400AA8753 /* YSProductListCollectionViewController.swift */; };
+		CD98966C1E66008400AA8753 /* YSMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965D1E66008400AA8753 /* YSMainTabBarViewController.swift */; };
+		CD98966D1E66008400AA8753 /* YSSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965E1E66008400AA8753 /* YSSortViewController.swift */; };
+		CD98966E1E66008400AA8753 /* YSFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98965F1E66008400AA8753 /* YSFilterViewController.swift */; };
+		CD98966F1E66008400AA8753 /* YSPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896601E66008400AA8753 /* YSPopupViewController.swift */; };
+		CD9896701E66008400AA8753 /* YSSearchViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896611E66008400AA8753 /* YSSearchViewController3.swift */; };
+		CD9896711E66008400AA8753 /* YSProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896621E66008400AA8753 /* YSProfileViewController.swift */; };
+		CD9896721E66008400AA8753 /* YSMainCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896631E66008400AA8753 /* YSMainCollectionsViewController.swift */; };
+		CD9896731E66008400AA8753 /* YSAddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896641E66008400AA8753 /* YSAddProductViewController.swift */; };
+		CD9896841E66008F00AA8753 /* YSSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896741E66008F00AA8753 /* YSSearchTableViewCell.swift */; };
+		CD9896851E66008F00AA8753 /* YSSearchTableViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896751E66008F00AA8753 /* YSSearchTableViewMainCell.swift */; };
+		CD9896861E66008F00AA8753 /* YSSearchTableViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896761E66008F00AA8753 /* YSSearchTableViewCollectionViewCell.swift */; };
+		CD9896871E66008F00AA8753 /* YSSearchExtendedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896771E66008F00AA8753 /* YSSearchExtendedTableViewCell.swift */; };
+		CD9896881E66008F00AA8753 /* YSSearchExtendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896781E66008F00AA8753 /* YSSearchExtendedCollectionViewCell.swift */; };
+		CD9896891E66008F00AA8753 /* YSProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896791E66008F00AA8753 /* YSProductCollectionViewCell.swift */; };
+		CD98968A1E66008F00AA8753 /* YSCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967A1E66008F00AA8753 /* YSCollectionTableViewCell.swift */; };
+		CD98968B1E66008F00AA8753 /* YSProductsLoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967B1E66008F00AA8753 /* YSProductsLoadMoreTableViewCell.swift */; };
+		CD98968C1E66008F00AA8753 /* YSCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967C1E66008F00AA8753 /* YSCartTableViewCell.swift */; };
+		CD98968D1E66008F00AA8753 /* YSBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967D1E66008F00AA8753 /* YSBrandTableViewCell.swift */; };
+		CD98968E1E66008F00AA8753 /* YSFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967E1E66008F00AA8753 /* YSFilterTableViewCell.swift */; };
+		CD98968F1E66008F00AA8753 /* YSPopupViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98967F1E66008F00AA8753 /* YSPopupViewCell.swift */; };
+		CD9896901E66008F00AA8753 /* YSSearchTableViewWithCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896801E66008F00AA8753 /* YSSearchTableViewWithCollectionViewCell.swift */; };
+		CD9896911E66008F00AA8753 /* YSSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896811E66008F00AA8753 /* YSSearchCollectionViewCell.swift */; };
+		CD9896921E66008F00AA8753 /* YSSearchSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896821E66008F00AA8753 /* YSSearchSliderCollectionViewCell.swift */; };
+		CD9896931E66008F00AA8753 /* YSProfileImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896831E66008F00AA8753 /* YSProfileImageTableViewCell.swift */; };
+		CD9896981E6600D500AA8753 /* YSRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896951E6600D500AA8753 /* YSRoundedCornersView.swift */; };
+		CD9896991E6600D500AA8753 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896961E6600D500AA8753 /* Helpers.swift */; };
+		CD98969A1E6600D500AA8753 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9896971E6600D500AA8753 /* JsonSerializer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1168E67864868D36EE3B016 /* Pods-YSVShoppingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSVShoppingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSVShoppingApp/Pods-YSVShoppingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BAF44D8F2317A07EC8426E0C /* Pods-YSVShoppingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSVShoppingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSVShoppingApp/Pods-YSVShoppingApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD9896051E65FDBA00AA8753 /* YSVShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSVShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9896081E65FDBA00AA8753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD98960F1E65FDBA00AA8753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD9896121E65FDBA00AA8753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD9896141E65FDBA00AA8753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD98961F1E66004500AA8753 /* YSPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPopupViewController.xib; sourceTree = "<group>"; };
+		CD9896201E66004500AA8753 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD9896211E66004500AA8753 /* YSSortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSSortViewController.xib; sourceTree = "<group>"; };
+		CD9896221E66004500AA8753 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD9896231E66004500AA8753 /* YSPopupViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSPopupViewCell.xib; sourceTree = "<group>"; };
+		CD98962A1E66006B00AA8753 /* YSSearchCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchCollectionViewLayout.swift; sourceTree = "<group>"; };
+		CD98962B1E66006B00AA8753 /* YSCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCollectionViewLayout.swift; sourceTree = "<group>"; };
+		CD98962C1E66006B00AA8753 /* YSSearchCollectionViewLayout3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchCollectionViewLayout3.swift; sourceTree = "<group>"; };
+		CD98962D1E66006B00AA8753 /* YSSearchCollectionViewLayout2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchCollectionViewLayout2.swift; sourceTree = "<group>"; };
+		CD9896321E66007900AA8753 /* AlertDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
+		CD9896331E66007900AA8753 /* YSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSButton.swift; sourceTree = "<group>"; };
+		CD9896341E66007900AA8753 /* AppGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobals.swift; sourceTree = "<group>"; };
+		CD9896351E66007900AA8753 /* YSCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCheckBox.swift; sourceTree = "<group>"; };
+		CD9896361E66007900AA8753 /* String+Numeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Numeric.swift"; sourceTree = "<group>"; };
+		CD9896371E66007900AA8753 /* PopupDialogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogManager.swift; sourceTree = "<group>"; };
+		CD9896381E66007900AA8753 /* YSHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSHelpers.swift; sourceTree = "<group>"; };
+		CD9896391E66007900AA8753 /* YSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSUtils.swift; sourceTree = "<group>"; };
+		CD98963A1E66007900AA8753 /* SearchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
+		CD98963B1E66007900AA8753 /* FavouriteProductArchiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteProductArchiver.swift; sourceTree = "<group>"; };
+		CD98963C1E66007900AA8753 /* BrandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		CD98963D1E66007900AA8753 /* ApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		CD98963E1E66007900AA8753 /* CollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+		CD98963F1E66007900AA8753 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		CD9896401E66007900AA8753 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CD9896411E66007900AA8753 /* MainCollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionModel.swift; sourceTree = "<group>"; };
+		CD9896421E66007900AA8753 /* StoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		CD9896431E66007900AA8753 /* MainHeadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeadModel.swift; sourceTree = "<group>"; };
+		CD9896561E66008400AA8753 /* YSSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchViewController.swift; sourceTree = "<group>"; };
+		CD9896571E66008400AA8753 /* YSCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCollectionsViewController.swift; sourceTree = "<group>"; };
+		CD9896581E66008400AA8753 /* YSProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProductDetailViewController.swift; sourceTree = "<group>"; };
+		CD9896591E66008400AA8753 /* YSCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCartViewController.swift; sourceTree = "<group>"; };
+		CD98965A1E66008400AA8753 /* YSBrandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBrandViewController.swift; sourceTree = "<group>"; };
+		CD98965B1E66008400AA8753 /* YSImageSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSImageSlideViewController.swift; sourceTree = "<group>"; };
+		CD98965C1E66008400AA8753 /* YSProductListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProductListCollectionViewController.swift; sourceTree = "<group>"; };
+		CD98965D1E66008400AA8753 /* YSMainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMainTabBarViewController.swift; sourceTree = "<group>"; };
+		CD98965E1E66008400AA8753 /* YSSortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSortViewController.swift; sourceTree = "<group>"; };
+		CD98965F1E66008400AA8753 /* YSFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFilterViewController.swift; sourceTree = "<group>"; };
+		CD9896601E66008400AA8753 /* YSPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPopupViewController.swift; sourceTree = "<group>"; };
+		CD9896611E66008400AA8753 /* YSSearchViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchViewController3.swift; sourceTree = "<group>"; };
+		CD9896621E66008400AA8753 /* YSProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProfileViewController.swift; sourceTree = "<group>"; };
+		CD9896631E66008400AA8753 /* YSMainCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSMainCollectionsViewController.swift; sourceTree = "<group>"; };
+		CD9896641E66008400AA8753 /* YSAddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSAddProductViewController.swift; sourceTree = "<group>"; };
+		CD9896741E66008F00AA8753 /* YSSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchTableViewCell.swift; sourceTree = "<group>"; };
+		CD9896751E66008F00AA8753 /* YSSearchTableViewMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchTableViewMainCell.swift; sourceTree = "<group>"; };
+		CD9896761E66008F00AA8753 /* YSSearchTableViewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchTableViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD9896771E66008F00AA8753 /* YSSearchExtendedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchExtendedTableViewCell.swift; sourceTree = "<group>"; };
+		CD9896781E66008F00AA8753 /* YSSearchExtendedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchExtendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD9896791E66008F00AA8753 /* YSProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD98967A1E66008F00AA8753 /* YSCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		CD98967B1E66008F00AA8753 /* YSProductsLoadMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProductsLoadMoreTableViewCell.swift; sourceTree = "<group>"; };
+		CD98967C1E66008F00AA8753 /* YSCartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSCartTableViewCell.swift; sourceTree = "<group>"; };
+		CD98967D1E66008F00AA8753 /* YSBrandTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSBrandTableViewCell.swift; sourceTree = "<group>"; };
+		CD98967E1E66008F00AA8753 /* YSFilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSFilterTableViewCell.swift; sourceTree = "<group>"; };
+		CD98967F1E66008F00AA8753 /* YSPopupViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPopupViewCell.swift; sourceTree = "<group>"; };
+		CD9896801E66008F00AA8753 /* YSSearchTableViewWithCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchTableViewWithCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD9896811E66008F00AA8753 /* YSSearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD9896821E66008F00AA8753 /* YSSearchSliderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSearchSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD9896831E66008F00AA8753 /* YSProfileImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSProfileImageTableViewCell.swift; sourceTree = "<group>"; };
+		CD9896951E6600D500AA8753 /* YSRoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSRoundedCornersView.swift; sourceTree = "<group>"; };
+		CD9896961E6600D500AA8753 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CD9896971E6600D500AA8753 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		D84662605F60A46E080798A0 /* Pods_YSVShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSVShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD9896021E65FDBA00AA8753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B152151074B66C13D073F2E /* Pods_YSVShoppingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1086979BD6A479D07C5F1F39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1168E67864868D36EE3B016 /* Pods-YSVShoppingApp.debug.xcconfig */,
+				BAF44D8F2317A07EC8426E0C /* Pods-YSVShoppingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8530C1D7787646FAD138D67D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84662605F60A46E080798A0 /* Pods_YSVShoppingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD9895FC1E65FDBA00AA8753 = {
+			isa = PBXGroup;
+			children = (
+				CD9896071E65FDBA00AA8753 /* YSVShoppingApp */,
+				CD9896061E65FDBA00AA8753 /* Products */,
+				1086979BD6A479D07C5F1F39 /* Pods */,
+				8530C1D7787646FAD138D67D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD9896061E65FDBA00AA8753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896051E65FDBA00AA8753 /* YSVShoppingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD9896071E65FDBA00AA8753 /* YSVShoppingApp */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896941E6600BF00AA8753 /* Utils */,
+				CD9896291E66004D00AA8753 /* Layouts */,
+				CD98961E1E66001A00AA8753 /* Cells */,
+				CD98961D1E66000C00AA8753 /* Views */,
+				CD98961C1E66000600AA8753 /* Controllers */,
+				CD98961B1E65FFFE00AA8753 /* Models */,
+				CD9896081E65FDBA00AA8753 /* AppDelegate.swift */,
+				CD98960F1E65FDBA00AA8753 /* Assets.xcassets */,
+				CD9896111E65FDBA00AA8753 /* LaunchScreen.storyboard */,
+				CD9896141E65FDBA00AA8753 /* Info.plist */,
+			);
+			path = YSVShoppingApp;
+			sourceTree = "<group>";
+		};
+		CD98961B1E65FFFE00AA8753 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896321E66007900AA8753 /* AlertDialog.swift */,
+				CD9896331E66007900AA8753 /* YSButton.swift */,
+				CD9896341E66007900AA8753 /* AppGlobals.swift */,
+				CD9896351E66007900AA8753 /* YSCheckBox.swift */,
+				CD9896361E66007900AA8753 /* String+Numeric.swift */,
+				CD9896371E66007900AA8753 /* PopupDialogManager.swift */,
+				CD9896381E66007900AA8753 /* YSHelpers.swift */,
+				CD9896391E66007900AA8753 /* YSUtils.swift */,
+				CD98963A1E66007900AA8753 /* SearchList.swift */,
+				CD98963B1E66007900AA8753 /* FavouriteProductArchiver.swift */,
+				CD98963C1E66007900AA8753 /* BrandModel.swift */,
+				CD98963D1E66007900AA8753 /* ApiModel.swift */,
+				CD98963E1E66007900AA8753 /* CollectionModel.swift */,
+				CD98963F1E66007900AA8753 /* ProductModel.swift */,
+				CD9896401E66007900AA8753 /* UserModel.swift */,
+				CD9896411E66007900AA8753 /* MainCollectionModel.swift */,
+				CD9896421E66007900AA8753 /* StoreModel.swift */,
+				CD9896431E66007900AA8753 /* MainHeadModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CD98961C1E66000600AA8753 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896561E66008400AA8753 /* YSSearchViewController.swift */,
+				CD9896571E66008400AA8753 /* YSCollectionsViewController.swift */,
+				CD9896581E66008400AA8753 /* YSProductDetailViewController.swift */,
+				CD9896591E66008400AA8753 /* YSCartViewController.swift */,
+				CD98965A1E66008400AA8753 /* YSBrandViewController.swift */,
+				CD98965B1E66008400AA8753 /* YSImageSlideViewController.swift */,
+				CD98965C1E66008400AA8753 /* YSProductListCollectionViewController.swift */,
+				CD98965D1E66008400AA8753 /* YSMainTabBarViewController.swift */,
+				CD98965E1E66008400AA8753 /* YSSortViewController.swift */,
+				CD98965F1E66008400AA8753 /* YSFilterViewController.swift */,
+				CD9896601E66008400AA8753 /* YSPopupViewController.swift */,
+				CD9896611E66008400AA8753 /* YSSearchViewController3.swift */,
+				CD9896621E66008400AA8753 /* YSProfileViewController.swift */,
+				CD9896631E66008400AA8753 /* YSMainCollectionsViewController.swift */,
+				CD9896641E66008400AA8753 /* YSAddProductViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CD98961D1E66000C00AA8753 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD98961F1E66004500AA8753 /* YSPopupViewController.xib */,
+				CD9896201E66004500AA8753 /* LaunchScreen.storyboard */,
+				CD9896211E66004500AA8753 /* YSSortViewController.xib */,
+				CD9896221E66004500AA8753 /* Main.storyboard */,
+				CD9896231E66004500AA8753 /* YSPopupViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CD98961E1E66001A00AA8753 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896741E66008F00AA8753 /* YSSearchTableViewCell.swift */,
+				CD9896751E66008F00AA8753 /* YSSearchTableViewMainCell.swift */,
+				CD9896761E66008F00AA8753 /* YSSearchTableViewCollectionViewCell.swift */,
+				CD9896771E66008F00AA8753 /* YSSearchExtendedTableViewCell.swift */,
+				CD9896781E66008F00AA8753 /* YSSearchExtendedCollectionViewCell.swift */,
+				CD9896791E66008F00AA8753 /* YSProductCollectionViewCell.swift */,
+				CD98967A1E66008F00AA8753 /* YSCollectionTableViewCell.swift */,
+				CD98967B1E66008F00AA8753 /* YSProductsLoadMoreTableViewCell.swift */,
+				CD98967C1E66008F00AA8753 /* YSCartTableViewCell.swift */,
+				CD98967D1E66008F00AA8753 /* YSBrandTableViewCell.swift */,
+				CD98967E1E66008F00AA8753 /* YSFilterTableViewCell.swift */,
+				CD98967F1E66008F00AA8753 /* YSPopupViewCell.swift */,
+				CD9896801E66008F00AA8753 /* YSSearchTableViewWithCollectionViewCell.swift */,
+				CD9896811E66008F00AA8753 /* YSSearchCollectionViewCell.swift */,
+				CD9896821E66008F00AA8753 /* YSSearchSliderCollectionViewCell.swift */,
+				CD9896831E66008F00AA8753 /* YSProfileImageTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CD9896291E66004D00AA8753 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				CD98962A1E66006B00AA8753 /* YSSearchCollectionViewLayout.swift */,
+				CD98962B1E66006B00AA8753 /* YSCollectionViewLayout.swift */,
+				CD98962C1E66006B00AA8753 /* YSSearchCollectionViewLayout3.swift */,
+				CD98962D1E66006B00AA8753 /* YSSearchCollectionViewLayout2.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		CD9896941E6600BF00AA8753 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD9896951E6600D500AA8753 /* YSRoundedCornersView.swift */,
+				CD9896961E6600D500AA8753 /* Helpers.swift */,
+				CD9896971E6600D500AA8753 /* JsonSerializer.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD9896041E65FDBA00AA8753 /* YSVShoppingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD9896171E65FDBA00AA8753 /* Build configuration list for PBXNativeTarget "YSVShoppingApp" */;
+			buildPhases = (
+				FA01EA34602FC5E95D35A50B /* [CP] Check Pods Manifest.lock */,
+				CD9896011E65FDBA00AA8753 /* Sources */,
+				CD9896021E65FDBA00AA8753 /* Frameworks */,
+				CD9896031E65FDBA00AA8753 /* Resources */,
+				E0005C8812FA37674A28104A /* [CP] Embed Pods Frameworks */,
+				BECC808ACAB69122BCF377ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSVShoppingApp;
+			productName = YSVShoppingApp;
+			productReference = CD9896051E65FDBA00AA8753 /* YSVShoppingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD9895FD1E65FDBA00AA8753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "yusuf yilmaz";
+				TargetAttributes = {
+					CD9896041E65FDBA00AA8753 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RX942KB2TA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD9896001E65FDBA00AA8753 /* Build configuration list for PBXProject "YSVShoppingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD9895FC1E65FDBA00AA8753;
+			productRefGroup = CD9896061E65FDBA00AA8753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD9896041E65FDBA00AA8753 /* YSVShoppingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD9896031E65FDBA00AA8753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9896281E66004600AA8753 /* YSPopupViewCell.xib in Resources */,
+				CD9896131E65FDBA00AA8753 /* LaunchScreen.storyboard in Resources */,
+				CD9896251E66004600AA8753 /* LaunchScreen.storyboard in Resources */,
+				CD9896261E66004600AA8753 /* YSSortViewController.xib in Resources */,
+				CD9896271E66004600AA8753 /* Main.storyboard in Resources */,
+				CD9896241E66004500AA8753 /* YSPopupViewController.xib in Resources */,
+				CD9896101E65FDBA00AA8753 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BECC808ACAB69122BCF377ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSVShoppingApp/Pods-YSVShoppingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0005C8812FA37674A28104A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSVShoppingApp/Pods-YSVShoppingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA01EA34602FC5E95D35A50B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD9896011E65FDBA00AA8753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9896701E66008400AA8753 /* YSSearchViewController3.swift in Sources */,
+				CD9896461E66007900AA8753 /* AppGlobals.swift in Sources */,
+				CD98969A1E6600D500AA8753 /* JsonSerializer.swift in Sources */,
+				CD9896491E66007900AA8753 /* PopupDialogManager.swift in Sources */,
+				CD9896451E66007900AA8753 /* YSButton.swift in Sources */,
+				CD9896671E66008400AA8753 /* YSProductDetailViewController.swift in Sources */,
+				CD98966B1E66008400AA8753 /* YSProductListCollectionViewController.swift in Sources */,
+				CD98966A1E66008400AA8753 /* YSImageSlideViewController.swift in Sources */,
+				CD98964E1E66007900AA8753 /* BrandModel.swift in Sources */,
+				CD9896441E66007900AA8753 /* AlertDialog.swift in Sources */,
+				CD98966D1E66008400AA8753 /* YSSortViewController.swift in Sources */,
+				CD98968B1E66008F00AA8753 /* YSProductsLoadMoreTableViewCell.swift in Sources */,
+				CD98968E1E66008F00AA8753 /* YSFilterTableViewCell.swift in Sources */,
+				CD9896501E66007900AA8753 /* CollectionModel.swift in Sources */,
+				CD98968F1E66008F00AA8753 /* YSPopupViewCell.swift in Sources */,
+				CD9896471E66007900AA8753 /* YSCheckBox.swift in Sources */,
+				CD98964A1E66007900AA8753 /* YSHelpers.swift in Sources */,
+				CD9896681E66008400AA8753 /* YSCartViewController.swift in Sources */,
+				CD9896731E66008400AA8753 /* YSAddProductViewController.swift in Sources */,
+				CD98966E1E66008400AA8753 /* YSFilterViewController.swift in Sources */,
+				CD9896931E66008F00AA8753 /* YSProfileImageTableViewCell.swift in Sources */,
+				CD9896651E66008400AA8753 /* YSSearchViewController.swift in Sources */,
+				CD98964F1E66007900AA8753 /* ApiModel.swift in Sources */,
+				CD9896691E66008400AA8753 /* YSBrandViewController.swift in Sources */,
+				CD9896841E66008F00AA8753 /* YSSearchTableViewCell.swift in Sources */,
+				CD9896311E66006B00AA8753 /* YSSearchCollectionViewLayout2.swift in Sources */,
+				CD9896911E66008F00AA8753 /* YSSearchCollectionViewCell.swift in Sources */,
+				CD98968A1E66008F00AA8753 /* YSCollectionTableViewCell.swift in Sources */,
+				CD9896531E66007900AA8753 /* MainCollectionModel.swift in Sources */,
+				CD9896711E66008400AA8753 /* YSProfileViewController.swift in Sources */,
+				CD9896721E66008400AA8753 /* YSMainCollectionsViewController.swift in Sources */,
+				CD98966F1E66008400AA8753 /* YSPopupViewController.swift in Sources */,
+				CD98968D1E66008F00AA8753 /* YSBrandTableViewCell.swift in Sources */,
+				CD9896511E66007900AA8753 /* ProductModel.swift in Sources */,
+				CD9896861E66008F00AA8753 /* YSSearchTableViewCollectionViewCell.swift in Sources */,
+				CD9896301E66006B00AA8753 /* YSSearchCollectionViewLayout3.swift in Sources */,
+				CD9896541E66007900AA8753 /* StoreModel.swift in Sources */,
+				CD9896851E66008F00AA8753 /* YSSearchTableViewMainCell.swift in Sources */,
+				CD9896551E66007900AA8753 /* MainHeadModel.swift in Sources */,
+				CD9896481E66007900AA8753 /* String+Numeric.swift in Sources */,
+				CD9896981E6600D500AA8753 /* YSRoundedCornersView.swift in Sources */,
+				CD98966C1E66008400AA8753 /* YSMainTabBarViewController.swift in Sources */,
+				CD9896661E66008400AA8753 /* YSCollectionsViewController.swift in Sources */,
+				CD9896871E66008F00AA8753 /* YSSearchExtendedTableViewCell.swift in Sources */,
+				CD9896991E6600D500AA8753 /* Helpers.swift in Sources */,
+				CD98962E1E66006B00AA8753 /* YSSearchCollectionViewLayout.swift in Sources */,
+				CD9896891E66008F00AA8753 /* YSProductCollectionViewCell.swift in Sources */,
+				CD9896921E66008F00AA8753 /* YSSearchSliderCollectionViewCell.swift in Sources */,
+				CD9896901E66008F00AA8753 /* YSSearchTableViewWithCollectionViewCell.swift in Sources */,
+				CD9896091E65FDBA00AA8753 /* AppDelegate.swift in Sources */,
+				CD98968C1E66008F00AA8753 /* YSCartTableViewCell.swift in Sources */,
+				CD9896881E66008F00AA8753 /* YSSearchExtendedCollectionViewCell.swift in Sources */,
+				CD98964B1E66007900AA8753 /* YSUtils.swift in Sources */,
+				CD98962F1E66006B00AA8753 /* YSCollectionViewLayout.swift in Sources */,
+				CD98964D1E66007900AA8753 /* FavouriteProductArchiver.swift in Sources */,
+				CD9896521E66007900AA8753 /* UserModel.swift in Sources */,
+				CD98964C1E66007900AA8753 /* SearchList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD9896111E65FDBA00AA8753 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD9896121E65FDBA00AA8753 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD9896151E65FDBA00AA8753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD9896161E65FDBA00AA8753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD9896181E65FDBA00AA8753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1168E67864868D36EE3B016 /* Pods-YSVShoppingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RX942KB2TA;
+				INFOPLIST_FILE = YSVShoppingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yusuf.YSVShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD9896191E65FDBA00AA8753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF44D8F2317A07EC8426E0C /* Pods-YSVShoppingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RX942KB2TA;
+				INFOPLIST_FILE = YSVShoppingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yusuf.YSVShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD9896001E65FDBA00AA8753 /* Build configuration list for PBXProject "YSVShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9896151E65FDBA00AA8753 /* Debug */,
+				CD9896161E65FDBA00AA8753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD9896171E65FDBA00AA8753 /* Build configuration list for PBXNativeTarget "YSVShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9896181E65FDBA00AA8753 /* Debug */,
+				CD9896191E65FDBA00AA8753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD9895FD1E65FDBA00AA8753 /* Project object */;
+}
